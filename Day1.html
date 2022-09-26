@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1</title>
+</head>
+
+<body>
+    <div class="">
+        What is Virtual DOM
+        What is SPA
+        What is difference between class and functional component
+        What does mean by state and its use in react?
+        What is JSX and why do we use it instead of js?
+        What is package.json
+    </div>
+    <div class="">
+        What is Virtual DOM
+        => Answer::Virtual DOM is a lightweight JavaScript object which is an in-memory representation of real DOM. It is an intermediary step between the render function being called and the displaying of elements on the screen. It is similar to a node tree which lists the elements, their attributes, and content as objects and their properties. The render function creates a node tree of the React components and then updates this node tree in response to the mutations in the data model caused by various actions done by the user or by the system
+    </div>
+
+    <div class="">
+        What is SPA?
+        =>SPA stands for Single Page Application. It is a very common way of programming websites these days. The idea is that the website loads all the HTML/JS the first time you visit. When you then navigate, the browser will only rerender the content without refreshing the website.
+    </div>
+    <div class="">
+        What is difference between class and functional component
+        => Functional Components or stateless components are the most widely used type of components with a basic syntax of JavaScript Functions that return the JSX code or the HTML code.
+        They are called as stateless components because they accept the data and display it accordingly and are mainly responsible for the rendering of the UI.
+        import React from ‘react’;
+        
+        const App=()=>{
+           return (
+              <div>
+                 <h1>Prepbytes</h1>
+              </div>
+           )
+        }
+        export default App
+        
+        Class based or stateful Components are the ES6 classes that extend the component class of the react library. They are known as stateful components because they are responsible for the implementation of the logic. It has different phases of the React lifecycle including rendering, mounting, updating and unmounting stage.
+        import React from 'react';
+        
+        class App extends React.Component{
+           render() {
+              return (
+                 <div>
+                    <h1>Prepbytes</h1>
+                 </div>
+              )
+           }
+        }
+        export default App
+        
+    </div>
+
+    <div class="">
+        What does mean by state and its use in react?
+        => React components has a built-in state object.
+
+        The state object is where you store property values that belongs to the component.
+        
+        When the state object changes, the component re-renders.
+    </div>
+     
+     <div class="">
+        What is JSX and why do we use it instead of js?
+        => JavaScript is just like any normal programming language without any additional library or framework. It can also be referred to as pure/vanilla JavaScript.
+
+        On the other hand, JSX is the syntactic sugar in JavaScript, a syntactic sugar is a syntax within a programming language that is designed to make things easier to read or to express. JSX is mostly used in JavaScript along with library/framework support like in ReactJS or ReactNative
+     </div>
+
+     <div class="">
+        What is package.json
+        => This file plays a very important role in the react application development and deployment. In short, we can say, Package.json = Metadata associated with project + All Dependencies with version + scripts. In the react project you can see the package.json file in the react project structure, double click on the package
+     </div>
+
+     <div class="">
+        
+     </div>
+
+
+
+</body>
+
+</html>
